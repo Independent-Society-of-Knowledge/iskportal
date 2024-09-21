@@ -27,7 +27,7 @@
   -->
 
 <template>
-  <h1 class="nuke-text-heading-02 ">Hello World!</h1>
+  <h1 class="">Hello World!</h1>
 </template>
 <script setup>
 

@@ -180,7 +180,10 @@ $fluid: (
 @each $fluidToken, $value in $fluid {
   .nuke-text-fluid-#{$fluidToken} {
     @each $breakPoint, $subValue in $value {
-      @apply #{$breakPoint}:text-[#{map.get($subValue, 'size')}px] #{$breakPoint}:leading-[#{map.get($subValue, 'lh')}px] #{$breakPoint}:tracking-[#{map.get($subValue, 'ls')}px] #{$breakPoint}:font-[#{map.get($subValue, 'weight')}];
+      @apply #{$breakPoint}:text-[#{map.get($subValue, 'size')}px]
+      #{$breakPoint}:leading-[#{map.get($subValue, 'lh')}px]
+      #{$breakPoint}:tracking-[#{map.get($subValue, 'ls')}px]
+      #{$breakPoint}:font-[#{map.get($subValue, 'weight')}];
     }
   }
 }
