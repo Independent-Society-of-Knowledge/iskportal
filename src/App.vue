@@ -1,7 +1,5 @@
 
 <!--
-  - Nukleus: A design system for knowledge (vue-components-library)
-  -
   - Copyright © 2024 Independent Society of Knowledge
   - This program is free software: you can redistribute it and/or modify
   - it under the terms of the GNU General Public License as published by
@@ -29,7 +27,7 @@
   -->
 
 <template>
-
+  <h1 class="nuke-text-heading-02 ">Hello World!</h1>
 </template>
 <script setup>
 
