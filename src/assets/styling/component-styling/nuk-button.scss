@@ -1,0 +1,35 @@
+.nuk-button{
+  @apply 
+  flex 
+  flex-row 
+  gap-32px 
+  h-fit 
+  w-full
+  nuk-sizing
+  nuk-coloring
+  transition-all
+  nuk-transition-expressive-standard-fast-01
+  // Sizes
+  [&[nuk-size='sm']]:py-8px
+  [&[nuk-size='md']]:py-16px
+  [&[nuk-size='lg']]:py-24px
+  [&[nuk-size='xlg']]:pb-48px 
+  [&[nuk-size='max']]:pb-64px
+  
+
+  // Normal Attributes
+  bg-[--nuk-primary-80] text-white 
+  [&[nuk-color-primary='gray']]:bg-[--nuk-primary-10] [&[nuk-color-primary='gray]]:text-black
+  dark:[&[nuk-color-primary='gray']]:bg-[--nuk-primary-80] dark:[&[nuk-color-primrary='gray']]:text-white
+  // Hover Attributes
+  hover:bg-[--nuk-primary-70] hover:[&[nuk-color-primary='gray']]:bg-[--nuk-primary-20]
+  dark:hover:[&[nuk-color-primary='gray']]:bg-[--nuk-primary-70]
+  // Active Attributes
+  active:bg-[--nuk-primary-60] active:[&[nuk-color-primary='gray']]:bg-[--nuk-primary-30]
+  dark:active[&[nuk-color-primary='gray']]:bg-[--nuk-primary-60]
+  
+  // Disabled Attributes
+  [&[disabled=true]]:bg-[--nuk-gray-20] [&[disabled=true]]:text-[--nuk-gray-30]
+  dark:[&[disabled=true]]:bg-[--nuk-gray-90] dark:[&[disabled=true]]:text-[--nuk-gray-70]
+  
+}
