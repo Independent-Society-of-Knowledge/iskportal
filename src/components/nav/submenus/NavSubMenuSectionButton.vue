@@ -25,17 +25,42 @@
   -
   -->
 
+
 <template>
-  <div class="w-screen h-screen dark:bg-dark-80 m-0 p-0">
-    <Navbar/>
+  <div
+      class="text-nowrap w-full h-fit p-[8px]
+    select-none
+    nuke-text-body-01
+    text-dark-20
+    hover:bg-light-30 hover:text-dark-60
+    data-[selected=true]:bg-light-40 data-[selected=true]:text-dark-80
+    dark:text-light-20
+    dark:hover:text-light-40 dark:hover:bg-dark-60
+    dark:data-[selected=true]:text-light-30 dark:data-[selected=true]:bg-dark-70"
+      :data-selected="isSelected"
+      @click="selectItem"
+  >
+    <slot/>
   </div>
-
 </template>
-<script setup>
-import MyLogo from '@/assets/brand-assets/logo-k-round.svg'
-import Navbar from "@/components/nav/Navbar.vue";
 
+<script setup lang="ts">
+import {computed} from "vue";
 
+const props = defineProps<{
+  modelValue: String, // v-model value will bind to this prop
+  value: String // The value to emit when the button is selected
+}>()
+
+// We emit events to update the parent component's v-model
+const emit = defineEmits(['update:modelValue']);
+
+// A computed property to check if this button is the selected one
+const isSelected = computed(() => props.modelValue === props.value);
+
+function selectItem() {
+  emit('update:modelValue', props.value); // Emit the selected value
+}
 </script>
 
 <style scoped>

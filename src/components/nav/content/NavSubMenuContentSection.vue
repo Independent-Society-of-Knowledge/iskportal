@@ -25,19 +25,31 @@
   -
   -->
 
+
 <template>
-  <div class="w-screen h-screen dark:bg-dark-80 m-0 p-0">
-    <Navbar/>
+  <div class="w-full text-dark-100 dark:text-light-10 flex flex-col gap-16px">
+    <div class="flex flex-col gap-16px">
+      <div class="nuke-text-fluid-heading-04">{{ title }}</div>
+      <div class="nuke-text-helper-text-01">{{ description }}</div>
+    </div>
+    <div class="grid grid-cols-3 ">
+      <slot/>
+    </div>
   </div>
-
 </template>
-<script setup>
-import MyLogo from '@/assets/brand-assets/logo-k-round.svg'
-import Navbar from "@/components/nav/Navbar.vue";
+<script setup lang="ts">
+import NavSubMenuContentCard from "@/components/nav/content/NavSubMenuContentCard.vue";
 
-
+const props = withDefaults(
+    defineProps<{
+      title: String,
+      description: String
+    }>(), {
+      title: "The title of this submenu section",
+      description: "the description of this submenu section which is usually longer than the title",
+    }
+)
 </script>
-
 <style scoped>
 
 </style>

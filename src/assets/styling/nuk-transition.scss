@@ -31,9 +31,10 @@ $modes: "expressive", "productive";
 @each $duration in $durations {
   @each $ease in $easing {
     @each $mode in $modes {
-      .nuk-transition-#{$mode}-#{$ease}-#{$duration} {
-        transition-duration: var(--nuk-duration-#{$duration});
-        transition-timing-function: var(--nuk-#{$ease}-#{$mode}-ease);
+      .nuke-transition-#{$mode}-#{$ease}-#{$duration} {
+        transition: all;
+        transition-duration: var(--nuke-duration-#{$duration});
+        transition-timing-function: var(--nuke-#{$ease}-#{$mode}-easing);
       }
     }
   }

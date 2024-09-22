@@ -25,19 +25,23 @@
   -
   -->
 
-<template>
-  <div class="w-screen h-screen dark:bg-dark-80 m-0 p-0">
-    <Navbar/>
-  </div>
 
+<template>
+  <div class="mx:px-[112px] py-[32px] mx:pl-[400px] dark:bg-dark-90 bg-light-10
+   border-b-[1px] border-b-light-40 dark:border-b-dark-50
+   w-full">
+    <nav-sub-menu-content-section title="Support" description="Support ISK financially">
+      <nav-sub-menu-content-card title="Donations" description="One-time financial support"/>
+      <nav-sub-menu-content-card title="Sponsor a Project"
+                                 description="Sponsor a project you find demanding; or propose a new project and support it financially"/>
+    </nav-sub-menu-content-section>
+  </div>
 </template>
 <script setup>
-import MyLogo from '@/assets/brand-assets/logo-k-round.svg'
-import Navbar from "@/components/nav/Navbar.vue";
 
-
+import NavSubMenuContentSection from "@/components/nav/content/NavSubMenuContentSection.vue";
+import NavSubMenuContentCard from "@/components/nav/content/NavSubMenuContentCard.vue";
 </script>
-
 <style scoped>
 
 </style>
