@@ -26,27 +26,23 @@
   -->
 
 <template>
-  <div class="w-screen h-[100vh] dark:bg-dark-100 m-0 p-0">
-    <Navbar/>
-    <hompage-hero-section/>
-    <div class="mx:px-[112px] md:px-[64px] py-64px xs:px-0 flex flex-col md:gap-128px xs:gap-[128px]">
-
-      <TextSection title="Knowledge, Unchained">
-        The Independent Society of Knowledge is a movement, through which, an alternative route to scientific inquiry is
-        established. It is a community driven organization that seeks a new wave in academia by solving its problems and
-        offering new ideas. This can mean proposing platforms, software, researches, and communities that could bend
-        knowledge to a more free region.
-      </TextSection>
+  <div class="text-dark-100 dark:text-light-10 flex xl:flex-row xs:flex-col h-fit gap-[32px]">
+    <div class="nuke-text-fluid-display-01 w-full">
+      {{
+        title
+      }}
+    </div>
+    <div class="nuke-text-fluid-paragraph-01 w-full">
+      <slot/>
     </div>
   </div>
-
 </template>
-<script setup>
-
-import TextSection from "@/components/TextSection.vue";
-import HompageHeroSection from "@/components/HeroSections/HompageHeroSection.vue";
-import Navbar from "@/components/nav/Navbar.vue";
+<script setup lang="ts">
+const props = defineProps<{
+  title: String
+}>()
 </script>
+
 
 <style scoped>
 

@@ -27,36 +27,49 @@
 
 
 <template>
-  <div class="w-screen h-[64px] flex flex-row gap-0 mx:px-[112px] fixed border-b-light-40  border-b-[1px]  bg-light-10  dark:border-b-dark-60  dark:bg-dark-80 z-1">
-      <div class="bg-dark-100 dark:bg-light-10 w-64px h-64px text-light-10 dark:text-dark-100 p-[16px]  ">
-        <svg width="100%" height="100%" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 160.5H80C85.5229 160.5 90 156.023 90 150.5C90 144.977 85.5229 140.5 80 140.5H36C27.1634 140.5 20 133.337 20 124.5V36.5C20 27.6634 27.1634 20.5 36 20.5H110C115.523 20.5 120 24.9772 120 30.5C120 36.0228 124.477 40.5 130 40.5C135.523 40.5 140 36.0228 140 30.5V16.5C140 7.66344 132.837 0.5 124 0.5H16C7.16344 0.5 0 7.66345 0 16.5V144.5C0 153.337 7.16344 160.5 16 160.5Z" fill="currentColor"/>
-          <path d="M100 150.5V60.5C100 54.9771 104.477 50.5 110 50.5C115.523 50.5 120 54.9772 120 60.5C120 66.0229 124.477 70.5 130 70.5H140V60.5C140 54.9772 144.477 50.5 150 50.5C155.523 50.5 160 54.9772 160 60.5C160 66.0229 155.523 70.5 150 70.5H140V90.5H144C152.837 90.5 160 97.6634 160 106.5V150.5C160 156.023 155.523 160.5 150 160.5C144.477 160.5 140 156.023 140 150.5V90.5H136C127.163 90.5 120 97.6634 120 106.5V125.5V150.5C120 156.023 115.523 160.5 110 160.5C104.477 160.5 100 156.023 100 150.5Z" fill="currentColor"/>
-        </svg>
-      </div>
-    <div class="h-full border-r-light-40 dark:border-r-dark-60 border-r-[1px] nuke-text-heading-03 text-dark-100 select-none dark:text-light-10 flex p-16px justify-center items-center">
+  <div
+      class="w-screen h-[64px] flex flex-row gap-0 xl:px-[112px]
+      xs:bg-none xs:fixed lg:relative
+      lg:border-b-light-40  lg:border-b-[1px]  lg:bg-light-10  lg:dark:border-b-dark-60  lg:dark:bg-dark-80"
+      @focusout="setSelectionToNone()" @scroll="setSelectionToNone()">
+    <div class="bg-dark-100 dark:bg-light-10 min-w-32px min-h-32px text-light-10 dark:text-dark-100 p-16px  ">
+      <svg width="100%" height="100%" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M16 160.5H80C85.5229 160.5 90 156.023 90 150.5C90 144.977 85.5229 140.5 80 140.5H36C27.1634 140.5 20 133.337 20 124.5V36.5C20 27.6634 27.1634 20.5 36 20.5H110C115.523 20.5 120 24.9772 120 30.5C120 36.0228 124.477 40.5 130 40.5C135.523 40.5 140 36.0228 140 30.5V16.5C140 7.66344 132.837 0.5 124 0.5H16C7.16344 0.5 0 7.66345 0 16.5V144.5C0 153.337 7.16344 160.5 16 160.5Z"
+            fill="currentColor"/>
+        <path
+            d="M100 150.5V60.5C100 54.9771 104.477 50.5 110 50.5C115.523 50.5 120 54.9772 120 60.5C120 66.0229 124.477 70.5 130 70.5H140V60.5C140 54.9772 144.477 50.5 150 50.5C155.523 50.5 160 54.9772 160 60.5C160 66.0229 155.523 70.5 150 70.5H140V90.5H144C152.837 90.5 160 97.6634 160 106.5V150.5C160 156.023 155.523 160.5 150 160.5C144.477 160.5 140 156.023 140 150.5V90.5H136C127.163 90.5 120 97.6634 120 106.5V125.5V150.5C120 156.023 115.523 160.5 110 160.5C104.477 160.5 100 156.023 100 150.5Z"
+            fill="currentColor"/>
+      </svg>
+    </div>
+    <div
+        class="
+        h-full border-r-light-40 dark:border-r-dark-60 border-r-[1px] nuke-text-heading-02 text-dark-100 select-none dark:text-light-10 flex p-16px justify-center items-center
+        xs:hidden lg:flex
+">
       Portal
     </div>
-    <nav-bar-button  value="solutions" v-model="selected">
+    <nav-bar-button class="xs:hidden lg:flex" value="solutions" v-model="selected">
       Solutions
     </nav-bar-button>
-    <nav-bar-button  value="get-involved" v-model="selected">
+    <nav-bar-button class="xs:hidden lg:flex" value="get-involved"    v-model="selected">
       Get Involved
     </nav-bar-button>
-    <nav-bar-button value="support" v-model="selected">
+    <nav-bar-button class="xs:hidden lg:flex" value="support" v-model="selected">
       Support
     </nav-bar-button>
-    <nav-bar-button value="about" v-model="nonSubmenus">
+    <nav-bar-button class="xs:hidden lg:flex" value="about" v-model="nonSubmenus">
       About ISK
     </nav-bar-button>
-    <nav-bar-button value="contact" v-model="nonSubmenus">
+    <nav-bar-button class="xs:hidden lg:flex" value="contact" v-model="nonSubmenus">
       Contact
     </nav-bar-button>
   </div>
-  <div v-if="selected!= 'none'" class="absolute top-64px w-screen border-b-[1px] border-b-light-40  dark:border-b-dark-50 dark:bg-dark-90 bg-light-10">
-    <support-submenu v-if="selected === 'support'" />
-    <get-involved-submenu v-else-if="selected === 'get-involved'" />
-    <solutions-submenu v-else-if="selected === 'solutions'" />
+  <div v-if="selected!= 'none'"
+       class="absolute z-50 top-64px w-screen border-b-[1px] border-b-light-40 dark:border-b-dark-50 dark:bg-dark-90 bg-light-10">
+    <support-submenu v-if="selected === 'support'"/>
+    <get-involved-submenu v-else-if="selected === 'get-involved'"/>
+    <solutions-submenu v-else-if="selected === 'solutions'"/>
   </div>
 
 
@@ -67,10 +80,13 @@ import NavBarButton from "@/components/NavBarButton.vue";
 import SolutionsSubmenu from "@/components/nav/submenus/SolutionsSubmenu.vue";
 import GetInvolvedSubmenu from "@/components/nav/submenus/GetInvolvedSubmenu.vue";
 import SupportSubmenu from "@/components/nav/submenus/SupportSubmenu.vue";
-import {ref, watch} from "vue";
+import {ref} from "vue";
 
 const selected = ref("none")
 const nonSubmenus = ref("none")
+function setSelectionToNone() {
+  selected.value = 'none'
+}
 </script>
 
 <style scoped>

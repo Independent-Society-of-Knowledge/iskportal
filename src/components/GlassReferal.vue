@@ -26,26 +26,30 @@
   -->
 
 <template>
-  <div class="w-screen h-[100vh] dark:bg-dark-100 m-0 p-0">
-    <Navbar/>
-    <hompage-hero-section/>
-    <div class="mx:px-[112px] md:px-[64px] py-64px xs:px-0 flex flex-col md:gap-128px xs:gap-[128px]">
+  <div class="
+  nuke-transition-productive-standard-moderate-01 backdrop-blur-[1px]
+  w-full
+  xs:p-16px
+  xl:py-64px flex flex-col
 
-      <TextSection title="Knowledge, Unchained">
-        The Independent Society of Knowledge is a movement, through which, an alternative route to scientific inquiry is
-        established. It is a community driven organization that seeks a new wave in academia by solving its problems and
-        offering new ideas. This can mean proposing platforms, software, researches, and communities that could bend
-        knowledge to a more free region.
-      </TextSection>
+  text-light-10 hover:text-dark-100
+  xl:border-l-light-100 xl:border-l-[1px]
+  hover:bg-light-10">
+    <div class="xs:h-fit xl:h-full w-full nuke-text-heading-03" >
+      {{title}}
     </div>
+    <div class="w-full xs:h-[16px] xl:h-[24px] flex justify-end">
+      <SvgArrowLeft height="100%"/>
+    </div>
+
   </div>
-
 </template>
-<script setup>
 
-import TextSection from "@/components/TextSection.vue";
-import HompageHeroSection from "@/components/HeroSections/HompageHeroSection.vue";
-import Navbar from "@/components/nav/Navbar.vue";
+<script setup lang="ts">
+import SvgArrowLeft from "@/assets/icons/arrow--right.svg?component"
+const props = defineProps<{
+  title: String
+}>()
 </script>
 
 <style scoped>
