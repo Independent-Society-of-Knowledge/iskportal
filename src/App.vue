@@ -26,16 +26,20 @@
   -->
 
 <template>
-  <div class="w-screen h-[100vh] dark:bg-dark-100 m-0 p-0">
-    <Navbar/>
-    <hompage-hero-section/>
-    <div class="mx:px-[112px] md:px-[64px] py-64px xs:px-0 flex flex-col md:gap-128px xs:gap-[128px]">
+  <div class="w-full h-fit flex flex-col dark:bg-dark-100 m-0 p-0 gap-128px">
 
+    <div class="w-full hero-and-navbar">
+      <Navbar/>
+      <hompage-hero-section/>
+    </div>
+    <div class="mx:px-[112px] md:px-[64px] py-64px xs:px-8px flex flex-col  xs:gap-[64px]">
       <TextSection title="Knowledge, Unchained">
         The Independent Society of Knowledge is a movement, through which, an alternative route to scientific inquiry is
         established. It is a community driven organization that seeks a new wave in academia by solving its problems and
-        offering new ideas. This can mean proposing platforms, software, researches, and communities that could bend
-        knowledge to a more free region.
+        offering new ideas.
+      </TextSection>
+      <TextSection title="Solutions" mode="vertical">
+        Our solutions empower researchers with state-of-the-art resources, from computational packages to collaborative environments.
       </TextSection>
     </div>
   </div>
@@ -49,5 +53,7 @@ import Navbar from "@/components/nav/Navbar.vue";
 </script>
 
 <style scoped>
-
+.hero-and-navbar{
+  height: calc(100vh - 64px);
+}
 </style>

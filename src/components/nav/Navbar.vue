@@ -28,8 +28,8 @@
 
 <template>
   <div
-      class="w-screen h-[64px] flex flex-row gap-0 xl:px-[112px]
-      xs:bg-none xs:fixed lg:relative
+      class="w-full h-[64px] flex flex-row gap-0 xl:px-[112px]
+      xs:bg-none nuke-transition-productive-standard-moderate-01
       lg:border-b-light-40  lg:border-b-[1px]  lg:bg-light-10  lg:dark:border-b-dark-60  lg:dark:bg-dark-80"
       @focusout="setSelectionToNone()" @scroll="setSelectionToNone()">
     <div class="bg-dark-100 dark:bg-light-10 min-w-32px min-h-32px text-light-10 dark:text-dark-100 p-16px  ">

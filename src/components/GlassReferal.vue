@@ -28,7 +28,7 @@
 <template>
   <div class="
   nuke-transition-productive-standard-moderate-01 backdrop-blur-[1px]
-  w-full
+  w-full h-full
   xs:p-16px
   xl:py-64px flex flex-col
 

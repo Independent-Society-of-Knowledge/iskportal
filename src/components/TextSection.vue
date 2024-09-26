@@ -26,7 +26,11 @@
   -->
 
 <template>
-  <div class="text-dark-100 dark:text-light-10 flex xl:flex-row xs:flex-col h-fit gap-[32px]">
+  <div class="
+  text-dark-100 dark:text-light-10 flex
+  data-[mode='fluid']:xl:flex-row data-[mode='fluid']:xs:flex-col h-fit gap-[32px] nuke-transition-productive-standard-fast-01
+  data-[mode='vertical']:flex-col data-[mode='horizontal']:flex-row
+  " :data-mode="mode">
     <div class="nuke-text-fluid-display-01 w-full">
       {{
         title
@@ -38,9 +42,16 @@
   </div>
 </template>
 <script setup lang="ts">
-const props = defineProps<{
-  title: String
-}>()
+const props = withDefaults(
+    defineProps<{
+      title: String
+      mode: "fluid" | "vertical" | "horizontal"
+    }>(),
+    {
+      title: "Default Title",
+      mode: "fluid"
+    }
+)
 </script>
 
 

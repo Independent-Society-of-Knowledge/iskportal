@@ -27,7 +27,7 @@
 
 
 <template>
-  <div class="w-full h-full hero-back bg-cover flex xl:flex-row xs:flex-col xl:px-[112px] ">
+  <div class="h-full hero-back bg-cover flex lg:flex-row xs:flex-col xl:px-[112px] nuke-transition-productive-standard-fast-01 ">
     <div class="flex flex-col w-full h-full  justify-center items-center gap-[16px] float-right align-middle xs:px-16px xl:px-64px">
       <div class="text-light-10  nuke-transition-expressive-standard-moderate-01 xs:w-[75%]  text-right flex justify-end">
         <svg  viewBox="0 0 400 176" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,17 +62,17 @@
           <path d="M378.896 163.215C376.343 163.215 374.066 162.789 372.066 161.937C370.108 161.084 368.448 159.891 367.086 158.357C365.725 156.78 364.682 154.926 363.958 152.795C363.277 150.622 362.937 148.257 362.937 145.7C362.937 143.058 363.299 140.671 364.022 138.54C364.788 136.367 365.852 134.534 367.214 133.043C368.576 131.509 370.193 130.337 372.066 129.527C373.981 128.717 376.087 128.312 378.385 128.312C380.684 128.312 382.748 128.696 384.578 129.463C386.45 130.187 388.025 131.232 389.301 132.595C390.621 133.959 391.621 135.6 392.302 137.517C393.025 139.393 393.387 141.502 393.387 143.846V145.828H371.938V148.129C371.938 151.197 372.725 153.563 374.3 155.225C375.917 156.844 378.024 157.654 380.62 157.654C383.003 157.654 384.918 157.121 386.365 156.056C387.812 154.99 388.876 153.669 389.557 152.092L392.685 154.01C392.302 155.075 391.727 156.162 390.961 157.27C390.238 158.336 389.301 159.316 388.152 160.211C387.046 161.106 385.727 161.83 384.195 162.384C382.662 162.938 380.896 163.215 378.896 163.215ZM371.938 142.12H384.705V141.289C384.705 138.221 384.152 135.962 383.045 134.513C381.982 133.064 380.428 132.34 378.385 132.34C376.343 132.34 374.747 133.064 373.598 134.513C372.491 135.919 371.938 138.157 371.938 141.225V142.12Z" fill="currentColor"/>
         </svg>
       </div>
-      <div class="nuke-text-heading-04 text-light-10 text-center w-full">
+      <div class="xs:nuke-text-heading-01 md:nuke-text-heading-04 text-light-10 text-center w-full">
         Knowledge, Unchained
       </div>
     </div>
-    <div class="w-full xs:h-fit xl:h-full  flex flex-row">
+    <div class="w-full xs:h-fit lg:h-full  flex flex-row">
       <GlassReferal title="Get Involved" />
       <GlassReferal title="Explore Options"/>
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 
 import GlassReferal from "@/components/GlassReferal.vue";
 </script>
