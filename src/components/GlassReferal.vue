@@ -38,6 +38,7 @@
     <div class="xs:h-fit xl:h-full w-full nuke-text-heading-03" >
       {{title}}
     </div>
+    <slot/>
     <div class="w-full xs:h-[16px] xl:h-[24px] flex justify-end">
       <SvgArrowLeft height="100%"/>
     </div>
