@@ -31,7 +31,7 @@
 
 <template>
   <div
-      class="text-nowrap w-full  h-fit py-8px px-[16px]
+      class="text-nowrap lg:w-full  h-fit py-8px px-[16px]
     nuke-transition-productive-standard-fast-01
     select-none
     nuke-text-body-01

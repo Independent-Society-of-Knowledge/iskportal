@@ -9,15 +9,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.29"
+    "core-js": "^3.38.1",
+    "html-loader": "^5.1.0",
+    "markdown-it": "^14.1.0",
+    "markdown-loader": "^8.0.0",
+    "marked": "^14.1.2",
+    "vue": "^3.4.29",
+    "vue-markdown-render": "^2.2.1",
+    "vue-resource": "^1.5.3"
   },
   "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "sass": "^1.79.3",
     "sass-embedded": "^1.79.3",
     "tailwindcss": "^3.4.12",
+    "texme": "^1.2.2",
     "vite": "^5.3.1",
     "vite-svg-loader": "^5.1.0",
     "vue-svg-loader": "^0.16.0",

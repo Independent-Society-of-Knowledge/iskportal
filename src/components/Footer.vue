@@ -29,11 +29,11 @@
 <template>
   <div
       class="mx:px-[112px] md:px-[64px] py-64px xs:px-16px flex flex-col gap-[64px] bg-dark-50 dark:bg-dark-80 ">
-    <div class="flex lg:flex-row xs:flex-col items-center   lg:gap-32px xs:gap-8px">
+    <div class="flex xl:flex-row xs:flex-col    lg:gap-32px xs:gap-8px">
     <div class="text-dark-60 w-fit justify-end flex">
       <SvgISKLogo width="20vw"/>
     </div>
-      <div class="flex lg:flex-col xs:flex-wrap gap-8px  ">
+      <div class="flex lg:flex-col xs:flex-wrap gap-8px ">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">About</div>
         <FooterButton>Overview</FooterButton>
         <FooterButton>Foundations</FooterButton>

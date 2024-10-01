@@ -77,8 +77,9 @@
 import GlassReferal from "@/components/GlassReferal.vue";
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .hero-back{
+  @apply invert dark:invert-0;
   background-image: url("../../../public/pawel-czerwinski-kyo00lYIkLQ-unsplash.jpg");
 
 }
