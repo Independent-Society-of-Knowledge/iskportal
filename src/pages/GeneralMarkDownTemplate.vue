@@ -26,26 +26,23 @@
   -->
 <template>
   <div
-      class="xs:p-0 md:px-16px lg:px-[256px] w-full h-[calc(75vh-64px)] header flex flex-col justify-end items-center align-bottom bg-cover"
+      class=" w-full h-[calc(75vh-64px)] flex flex-col  items-start  bg-cover"
       :style="{
       backgroundImage: `url(${imageURL})`
     }"
   >
-    <div class="w-full bg-black nuke-text-fluid-display-03 text-light-10 p-32px">
+    <div class="xs:mx-0 mx:px-[112px] xl:mx-[112px] xs:px-16px  py-32px md:px-[64px] md:h-full xs:h-fit xs:w-full xs:w-fit nuke-transition-productive-standard-slow-01 w-full
+      bg-black dark:bg-light-10  nuke-text-fluid-display-01 text-light-10 dark:text-dark-100 lg:max-w-[50%]
+      ">
       {{ title }}
     </div>
   </div>
-  <div
-      class="xs:p-0 md:px-16px lg:px-[256px] w-full dark:text-light-10 text-dark-100 pt-[64px] flex flex-row content-holder">
-
-  </div>
-  <div v-html="renderedMarkdown" class="xs:px-16px lg:px-[256px] press" />
-  <!--  <div v-html="require(`!html-loader!markdown-loader!../../public/blogs/${content}`)" class="text-light-10 markdown-container"/>-->
+  <div v-html="renderedMarkdown" class="xs:py-32px md:px-16px h-fit lg:px-[256px] w-full dark:text-light-10 text-dark-100  flex flex-col gap-32px press" />
 </template>
 <script lang="ts" setup>
 import {computed, onMounted, ref} from "vue";
 import {marked} from "marked";
-
+import markedKatex from "marked-katex-extension";
 
 const props = defineProps<{
   imageName: string,
@@ -62,11 +59,17 @@ const contentURL = computed(()=> {
 })
 const markdownContent = ref<string>('');
 const renderedMarkdown = ref<any>(''); // I assume marked returns string HTML
+const options = {
+  throwOnError: false
+};
 
 fetch(contentURL.value)
     .then(response => response.text())
     .then(data => {
       markdownContent.value = data;  // Assign the fetched markdown content
+      marked.use(markedKatex(options))
+
+      // marked.use(markedCodePreview())
       renderedMarkdown.value = marked.parse(markdownContent.value); // Parse and render markdown
     })
     .catch(err => console.error(err));

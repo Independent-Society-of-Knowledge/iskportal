@@ -104,7 +104,7 @@
       its ideologies.
     </text-section>
     <div class="w-full h-fit flex lg:flex-row xs:flex-col bg-cover">
-      <div class="col-span-2">
+      <div class="w-full">
         <div class="press-back">
           <GlassSection title="Press">
             <div class="nuke-text-fluid-paragraph-01 py-16px">
@@ -120,7 +120,7 @@
           </GlassSection>
         </div>
       </div>
-      <div class="contribution-back">
+      <div class="w-full contribution-back">
         <GlassSection title="Contribution">
           <div class="nuke-text-fluid-paragraph-01 py-16px">
             ISK actively searches for bright minds, to help it with the mission, in projects and more

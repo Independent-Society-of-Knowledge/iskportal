@@ -31,7 +31,7 @@
   data-[mode='fluid']:xl:flex-row data-[mode='fluid']:xs:flex-col h-fit gap-[32px] nuke-transition-productive-standard-fast-01
   data-[mode='vertical']:flex-col data-[mode='horizontal']:flex-row
   " :data-mode="mode">
-    <div class="nuke-text-fluid-display-01 w-full">
+    <div class="nuke-text-fluid-display-01 w-full" >
       {{
         title
       }}

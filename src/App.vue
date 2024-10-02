@@ -31,9 +31,10 @@
       <Navbar/>
     </div>
     <div class="w-full h-fit flex flex-col p-0 m-0 min-h-screen ">
-      <general-mark-down-template title="Not all Who wander are lost." image-name="test.jpg"
-                                  content-name="True-Decentralized-Academia"/>
+<!--      <general-mark-down-template title="Not all Who wander are lost." image-name="test.jpg"-->
+<!--                                  content-name="Test"/>-->
 <!--      <home-page/>-->
+      <about-us/>
     </div>
     <Footer/>
   </div>
@@ -44,6 +45,7 @@ import Navbar from "@/components/nav/Navbar.vue";
 import Footer from "@/components/Footer.vue";
 import GeneralMarkDownTemplate from "@/pages/GeneralMarkDownTemplate.vue";
 import HomePage from "@/pages/HomePage.vue";
+import AboutUs from "@/pages/AboutUs.vue";
 </script>
 
 <style scoped>

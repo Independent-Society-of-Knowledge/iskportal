@@ -28,17 +28,17 @@
 @import 'nuk-type';
 
 .press{
-  @apply text-dark-100 dark:text-light-10 flex flex-col gap-32px;
+  @apply text-dark-100 dark:text-light-10 flex flex-col gap-16px;
 
   h1 {
     @apply nuke-text-fluid-display-01
   }
 
   h2 {
-    @apply nuke-text-fluid-heading-05
+    @apply nuke-text-fluid-heading-03
   }
   h3 {
-    @apply nuke-text-fluid-heading-04
+    @apply nuke-text-heading-06
   }
   h4 {
     @apply nuke-text-fluid-heading-03
@@ -52,8 +52,14 @@
   p {
     @apply nuke-text-fluid-paragraph-01
   }
-  blockquote {
+  blockquote > p {
     @apply nuke-text-fluid-quotation-01
+  }
+  code {
+    @apply nuke-text-code-01
+  }
+  img {
+    @apply max-w-full min-w-fit flex justify-center items-center
   }
 }
 
