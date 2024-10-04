@@ -28,7 +28,7 @@
 
 <template>
   <div
-      class="mx:px-[112px] md:px-[64px] py-64px xs:px-16px flex flex-col gap-[64px] bg-dark-50 dark:bg-dark-80 ">
+      class="mx:px-[112px] md:px-[64px] py-64px xs:px-16px flex flex-col gap-[64px] bg-dark-50 dark:bg-dark-100 ">
     <div class="flex xl:flex-row xs:flex-col    lg:gap-32px xs:gap-8px">
     <div class="text-dark-60 w-fit justify-end flex">
       <SvgISKLogo width="20vw"/>
