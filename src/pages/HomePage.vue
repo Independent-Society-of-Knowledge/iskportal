@@ -41,7 +41,7 @@
         collaborative
         environments.
       </TextSection>
-      <div class="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 w-full col-span-2">
+      <div class="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 w-full col-span-2 border-collapse">
         <Card title="Libraries and Packages" description="Specialized libraries for computation and simulation."
               link="">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
