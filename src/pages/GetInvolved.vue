@@ -25,34 +25,35 @@
   -
   -->
 
-<template>
-  <div class="w-full h-fit flex flex-col dark:bg-dark-80 bg-light-10 m-0 p-0">
-    <div  id='header' class="w-full ">
-      <Navbar/>
-    </div>
-    <div class="w-full h-fit flex flex-col p-0 m-0  "
-    >
-<!--      <general-mark-down-template title="Not all Who wander are lost." image-name="test.jpg"-->
-<!--                                  content-name="Test"/>-->
-<!--      <home-page/>-->
-<!--      <about-us/>-->
-<!--      <get-involved/>-->
-      <Contribution/>
-    </div>
-    <Footer/>
-  </div>
 
+<template>
+  <div
+      class="h-[calc(100vh-64px)] lg:w-full   flex flex-row  w-full items-start  bg-cover about-background justify-end nuke-transition-productive-standard-moderate-01">
+    <div class=" mx:px-[112px] xs:mx-0 xl:mx-[112px]  xs:px-16px   py-32px md:px-64px md:h-full xs:h-fit xs:w-fit nuke-transition-productive-standard-slow-01 w-full
+      bg-black nuke-text-fluid-display-01 text-light-10  flex flex-col gap-64px justify-between
+      ">
+      <div class="nuke-text-fluid-display-01 h-full">
+        Get<br> Involved
+      </div>
+      <div class="nuke-text-fluid-paragraph-01  max-w-[512px] ">
+        Independent Society of Knowledge looks actively for potential collaborations, and contributors. In Our mind, a
+        global effort is what makes ISK special.
+      </div>
+    </div>
+    <div class="flex flex-col w-full h-full max-w-[50%]">
+      <glass-referal title="Collaboration"/>
+      <glass-referal title="Contribution"/>
+    </div>
+  </div>
 </template>
 <script setup>
-import Navbar from "@/components/nav/Navbar.vue";
-import Footer from "@/components/Footer.vue";
-import GeneralMarkDownTemplate from "@/pages/GeneralMarkDownTemplate.vue";
-import HomePage from "@/pages/HomePage.vue";
-import AboutUs from "@/pages/AboutUs.vue";
-import GetInvolved from "@/pages/GetInvolved.vue";
-import Contribution from "@/pages/get-involved/Contribution.vue";
+
+import GlassReferal from "@/components/GlassReferal.vue";
 </script>
 
 <style scoped>
+.about-background {
+  background-image: url("/nasa-Q1p7bh3SHj8-unsplash.jpg");
+}
 
 </style>

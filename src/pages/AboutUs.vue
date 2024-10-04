@@ -43,35 +43,32 @@
   </div>
   <div class="flex flex-col gap-64px pt-64px lg:px-[112px] md:px-[64px] xs:px-16px    text-dark-100 dark:text-light-10">
     <div class="flex xs:flex-col lg:flex-row gap-16px">
-      <div  mode="vertical" class="bg-dark-70 p-32px nuke-text-fluid-paragraph-01 flex flex-col gap-16px">
-        <div class="nuke-text-heading-03  p-16px pl-8px w-fit bg-light-10  text-dark-100">As an Idea</div>
-        Any society that operates under the principles of open collaboration in science can be called an Independent
-        Society of Knowledge. These societies, rely on voluntary contributions from
-        diverse participants who work together without formal hierarchies or price-based coordination. Their goal is to
-        produce and share scientific knowledge as a common good, freely accessible to all.
-        This decentralized approach encourages innovation and the collective refinement of ideas, breaking traditional barriers to the flow of
-        information and advancing knowledge in an open and unrestricted manner.
-
+      <div mode="vertical"
+           class="bg-light-40 text-dark-100 p-32px nuke-text-fluid-paragraph-01 w-full flex flex-col gap-16px">
+        <div class="nuke-text-heading-03 p-16px w-fit bg-dark-100  text-light-10">Vision</div>
+        We envision a decentralization in science and a collaborative route for its inquiry.
       </div>
-      <div  mode="vertical" class="bg-light-40 text-dark-100 p-32px nuke-text-fluid-paragraph-01 flex flex-col gap-16px">
-        <div class="nuke-text-heading-03 p-16px pl-8px w-fit bg-dark-100  text-light-10">As an Organization</div>
-        We, as the Independent Society of Knowledge (ISK), represent the first actualization of this visionary concept.
-        Our organization embodies the principles of open collaboration, uniting individuals from diverse fields to freely
-        share, produce, and refine knowledge without the constraints of traditional structures. By fostering a
-        decentralized and voluntary community, ISK strives to make scientific knowledge universally accessible, breaking
-        down barriers and encouraging innovation. As pioneers of this movement, we aim to create a space where ideas flow
-        unchained, empowering contributors and non-contributors alike to engage with and benefit from the collective
-        growth of knowledge.
+      <div mode="vertical" class="bg-dark-70 p-32px nuke-text-fluid-paragraph-01 flex flex-col w-full gap-16px">
+        <div class="nuke-text-heading-03  p-16px w-fit bg-light-10  text-dark-100">Mission</div>
+        We bring together necessary technologies and platforms to make knowledge inquiry more dynamic and natural.
       </div>
     </div>
+    <TextSection mode="fluid" title="Overview">
+      The Independent Society of Knowledge (ISK) is an organization dedicated to scientific inquiry through
+      decentralized, collaborative, and open-access initiatives. It visions an alternative path in the scientific world
+      through these basis. We seek these ideals by providing modern frameworks, software, education, and platforms for
+      academics, researchers, and innovators to engage in community-driven projects that challenge traditional academic
+      norms.
+    </TextSection>
+    <SectionsHolder/>
+    <!-- Oppenheimer Quote !-->
     <div class=" flex flex-row text-dark-100 dark:text-light-10">
-      <div class="flex flex-row justify-end items-end  gap-32px min-h-screen bg-cover oppenheimer-picture ">
-        <div class="h-full w-full"/>
+      <div class="flex flex-row justify-end items-end  gap-32px min-h-screen  xs:bg-center lg:bg-top bg-cover oppenheimer-picture  ">
+        <div class="h-full lg:w-full xs:w-0"/>
         <div class="h-fit w-full p-16px flex flex-col gap-16px bg-light-30 dark:bg-dark-100 ">
           <div class="nuke-text-fluid-quotation-01 nuke-text-serif">
             “There must be no barriers to freedom of inquiry; There is no place for dogma in science. The scientist is
-            free,
-            and must be free to ask any question, to doubt any assertion, to seek for any evidence, to correct any
+            free,and must be free to ask any question, to doubt any assertion, to seek for any evidence, to correct any
             errors.”
           </div>
           <div class="nuke-text-fluid-heading-03">
@@ -81,11 +78,27 @@
       </div>
       <!--      <div class="w-full h-full"></div>-->
     </div>
+    <!-- Learn More !-->
+    <TextSection mode="fluid" title="Learn More">
+      You can find more about the organization, its mission and vision, reports and ongoing projects as well as
+      proposals through these links.
+    </TextSection>
+  </div>
+  <div class="w-full flex lg:flex-row xs:flex-col gap-0px pt-64px">
+    <FooterCard title="Initiative" description="Read in full details about ISK." link="https://init.iskportal.com"
+                class="w-full"/>
+    <FooterCard title="Proposals" description="Learn more about our projects." link="https://init.iskportal.com"
+                class="w-full"/>
+    <FooterCard title="Funds" description="Learn more about sponsors of the society." link="https://init.iskportal.com"
+                class="w-full"/>
+    <FooterCard title="Brand Identity" description="About our design culture." link="https://init.iskportal.com"
+                class="w-full"/>
   </div>
 </template>
 <script setup>
-
 import TextSection from "@/components/TextSection.vue";
+import FooterCard from "@/components/FooterCard.vue";
+import SectionsHolder from "@/components/about-us/SectionsHolder.vue";
 </script>
 
 <style scoped>
