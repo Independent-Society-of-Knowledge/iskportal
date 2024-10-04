@@ -25,34 +25,28 @@
   -
   -->
 
+
 <template>
-  <div class="
-  nuke-transition-productive-standard-moderate-01 backdrop-blur-[1px] dark:hover:bg-dark-100
-  w-full h-full
-  xs:p-16px
-  xl:py-64px flex flex-col
-  text-light-10 hover:text-dark-100 dark:hover:text-light-10
-  xl:border-l-light-100 xl:border-l-[1px]
-  xl:border-b-light-100 xl:border-b-[1px]
-  hover:bg-light-10">
-    <div class="xs:h-fit xl:h-full w-full nuke-text-heading-03" >
-      {{title}}
-    </div>
-    <slot/>
-    <div class="w-full xs:h-[16px] xl:h-[24px] flex justify-end">
-      <SvgArrowLeft height="100%"/>
-    </div>
+  <a :href="href">
+    <div class="nuke-text-body-02 flex flex-row gap-8px items-start justify-start
+  nuke-transition-productive-standard-fast-01
+  text-primary-80 hover:text-primary-60 active:text-primary-90
+  dark:text-primary-30 dark:hover:text-primary-50 dark:active:text-primary-60 group h-fit
 
-  </div>
+">
+      {{ text }}
+      <SvgArrowLeft height="24px"/>
+    </div>
+  </a>
 </template>
-
 <script setup lang="ts">
-import SvgArrowLeft from "@/assets/icons/arrow--right.svg?component"
+import SvgArrowLeft from "@/assets/icons/arrow--right.svg?component";
+
 const props = defineProps<{
-  title: String
+  text: string,
+  href: string
 }>()
 </script>
-
 <style scoped>
 
 </style>
