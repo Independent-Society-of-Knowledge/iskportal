@@ -67,7 +67,7 @@
       </div>
     </div>
     <div class="w-full xs:h-fit lg:h-full  flex flex-row">
-      <GlassReferal title="Get Involved" />
+      <RouterLink to="get-involved" class="w-full"><GlassReferal title="Get Involved" /></RouterLink>
       <GlassReferal title="Explore Options"/>
     </div>
   </div>

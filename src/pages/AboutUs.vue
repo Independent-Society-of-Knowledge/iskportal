@@ -48,7 +48,7 @@
         <div class="nuke-text-heading-03 p-16px w-fit bg-dark-100  text-light-10">Vision</div>
         We envision a decentralization in science and a collaborative route for its inquiry.
       </div>
-      <div mode="vertical" class="bg-dark-70 p-32px nuke-text-fluid-paragraph-01 flex flex-col w-full gap-16px">
+      <div mode="vertical" class="bg-dark-70 p-32px nuke-text-fluid-paragraph-01 text-light-10 flex flex-col w-full gap-16px">
         <div class="nuke-text-heading-03  p-16px w-fit bg-light-10  text-dark-100">Mission</div>
         We bring together necessary technologies and platforms to make knowledge inquiry more dynamic and natural.
       </div>

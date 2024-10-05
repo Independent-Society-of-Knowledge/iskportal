@@ -94,7 +94,7 @@
         </div>
       </div>
       <div class="flex xs:flex-col lg:flex-row gap-16px">
-        <div mode="vertical"
+        <div mode="vertical" id="establishment"
              class="bg-light-40 text-dark-100 p-32px nuke-text-fluid-paragraph-01 w-full flex flex-col gap-16px">
           <div class="nuke-text-heading-03 p-16px w-fit bg-dark-100  text-light-10">Establishment</div>
           ISK was established in August 2023, born out of our desire to see academia take a more open and
@@ -103,7 +103,7 @@
           believe that knowledge should be shared freely and that everyone should have the opportunity to contribute
           to and benefit from it, regardless of their background or location.
         </div>
-        <div mode="vertical" class="bg-dark-70 p-32px nuke-text-fluid-paragraph-01 flex flex-col w-full gap-16px">
+        <div mode="vertical" class="bg-dark-70 p-32px nuke-text-fluid-paragraph-01 flex flex-col w-full gap-16px text-light-10" id="impact">
           <div class="nuke-text-heading-03  p-16px w-fit bg-light-10  text-dark-100">Impact</div>
           We envision a future where knowledge is truly decentralized, where every individual, regardless of their
           circumstances, has the power to learn, teach, and innovate. This future holds the promise of unprecedented

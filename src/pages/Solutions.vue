@@ -26,27 +26,11 @@
   -->
 
 <template>
-  <div class="w-full h-fit flex flex-col dark:bg-dark-80 bg-light-10 m-0 p-0">
-    <div  id='header' class="w-full App__nav ">
-      <Navbar/>
-    </div>
-    <div class="w-full h-fit flex flex-col p-0 m-0 App__main"
-    >
-        <router-view/>
-    </div>
-
-    <Footer class="App__footer"/>
-  </div>
 
 </template>
+
 <script setup>
-import Navbar from "@/components/nav/Navbar.vue";
-import Footer from "@/components/Footer.vue";
-import GeneralMarkDownTemplate from "@/components/GeneralMarkDownTemplate.vue";
-import HomePage from "@/pages/HomePage.vue";
-import AboutUs from "@/pages/AboutUs.vue";
-import GetInvolved from "@/pages/GetInvolved.vue";
-import Contribution from "@/pages/get-involved/Contribution.vue";
+
 </script>
 
 <style scoped>

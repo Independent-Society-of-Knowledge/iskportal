@@ -52,7 +52,7 @@
     <div class="nuke-text-fluid-display-01">
       Become a contributor
     </div>
-    <div class="flex lg:flex-row xs:flex-col">
+    <div class="flex lg:flex-row xs:flex-col gap-32px">
       <div id="development" class="flex flex-col gap-16px w-full h-full">
         <div class="nuke-text-fluid-heading-04">Development</div>
         <div class="nuke-text-heading-03">Get involved as a developer.</div>

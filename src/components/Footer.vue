@@ -35,12 +35,12 @@
     </div>
       <div class="flex lg:flex-col xs:flex-wrap gap-8px ">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">About</div>
-        <FooterButton>Overview</FooterButton>
-        <FooterButton>Foundations</FooterButton>
-        <FooterButton>Identity</FooterButton>
-        <FooterButton>Brand</FooterButton>
-        <FooterButton>Membership Policy</FooterButton>
-        <FooterButton>Initiative Document</FooterButton>
+        <a href="https://init.iskportal.com/overview"><FooterButton>Overview</FooterButton></a>
+        <a href="https://init.iskportal.com/foundations"><FooterButton>Foundations</FooterButton></a>
+        <a href="https://init.iskportal.com/identity"><FooterButton>Identity</FooterButton></a>
+        <a href="https://init.iskportal.com/brand-overview"><FooterButton>Brand</FooterButton></a>
+        <a href="https://init.iskportal.com/membership-policies"><FooterButton>Membership Policy</FooterButton></a>
+        <a href="https://init.iskportal.com/"><FooterButton>Initiative Document</FooterButton></a>
       </div>
       <div class="flex lg:flex-col xs:flex-wrap gap-8px">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">Contact</div>
