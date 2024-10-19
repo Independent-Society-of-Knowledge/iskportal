@@ -27,7 +27,7 @@
 
 
 <template>
-  <div class="mx:px-[112px] py-[32px] mx:pl-[400px] dark:bg-dark-90 bg-light-10
+  <div class="mx:px-[112px] py-[32px] mx:pl-[400px] xs:px-[64px] dark:bg-dark-90 bg-light-10
    border-b-[1px] border-b-light-40 dark:border-b-dark-50
    w-full">
     <nav-sub-menu-content-section title="Support" description="Support ISK financially">
