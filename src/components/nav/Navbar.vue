@@ -71,7 +71,7 @@
         Contact
       </nav-bar-button>
     </div>
-    <div v-if="selected!= 'none'"
+    <div v-if="selected!== 'none'"
          class="absolute z-50 top-64px w-full border-b-[1px] border-b-light-40 dark:border-b-dark-50 dark:bg-dark-90 bg-light-10 transition-all ">
       <support-submenu v-if="selected === 'support'"/>
       <get-involved-submenu v-else-if="selected === 'get-involved'"/>
