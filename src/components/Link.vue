@@ -25,33 +25,34 @@
   -
   -->
 
-<template>
-  <div class="
-  nuke-transition-productive-standard-moderate-01 backdrop-blur-[1px] dark:hover:bg-dark-100
-  w-full h-full
-  xs:p-16px
-  xl:py-64px flex flex-col
-  text-light-10 hover:text-dark-100 dark:hover:text-light-10
-  xl:border-l-light-100 xl:border-l-[1px]
-  hover:bg-light-10">
-    <div class="xs:h-fit xl:h-full w-full nuke-text-heading-03" >
-      {{title}}
+  <template>
+    <div class="flex flex-col gap-4px">
+        
+    <a :href="link">
+        <div class="nuke-text-body-02 flex flex-row gap-8px nuke-transition-productive-standard-fast-01 w-fit h-fit items-center 
+        text-primary-50 dark:text-primary-40 
+        hover:text-primary-60 hover:dark:text-primary-30">
+      <div>
+        {{text}}
+      </div>
+      <div class="w-fit h-16px flex justify-end">
+        <SvgArrowLeft height="100%"/>
+      </div>
     </div>
-    <slot/>
-    <div class="w-full xs:h-[16px] xl:h-[24px] flex justify-end">
-      <SvgArrowLeft height="100%"/>
-    </div>
-
-  </div>
-</template>
-
-<script setup lang="ts">
-import SvgArrowLeft from "@/assets/icons/arrow--right.svg?component"
-const props = defineProps<{
-  title: String
-}>()
-</script>
-
-<style scoped>
-
-</style>
+    </a>
+    <div class="nuke-text-helper-text-01 text-dark-100 dark:text-light-10" v-if="helper" >{{ helper }}</div>
+</div>
+  </template>
+  
+  <script setup lang="ts">
+  import SvgArrowLeft from "@/assets/icons/arrow--right.svg?component"
+  const props = defineProps<{
+    helper?: String,
+    text: String,
+    link: string
+  }>()
+  </script>
+  
+  <style scoped>
+  
+  </style>

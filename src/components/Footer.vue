@@ -29,11 +29,12 @@
 <template>
   <div
       class="mx:px-[112px] md:px-[64px] py-64px xs:px-16px flex flex-col gap-[64px] bg-dark-50 dark:bg-dark-100 ">
-    <div class="flex xl:flex-row xs:flex-col    lg:gap-32px xs:gap-8px">
-    <div class="text-dark-60 w-fit justify-end flex">
-      <SvgISKLogo width="20vw"/>
+    <div class="flex lg:flex-row lg:gap-32px xs:gap-8px  ">
+    <div class="text-dark-60 w-fixed justify-end flex">
+      <SvgISKLogo width="256px"/>
     </div>
-      <div class="flex lg:flex-col xs:flex-wrap gap-8px ">
+    
+      <div class="flex flex-col  gap-8px">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">About</div>
         <a href="https://init.iskportal.com/overview"><FooterButton>Overview</FooterButton></a>
         <a href="https://init.iskportal.com/foundations"><FooterButton>Foundations</FooterButton></a>
@@ -42,7 +43,7 @@
         <a href="https://init.iskportal.com/membership-policies"><FooterButton>Membership Policy</FooterButton></a>
         <a href="https://init.iskportal.com/"><FooterButton>Initiative Document</FooterButton></a>
       </div>
-      <div class="flex lg:flex-col xs:flex-wrap gap-8px">
+      <div class="flex flex-col  gap-8px">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">Contact</div>
         <FooterButton>For Organizations</FooterButton>
         <FooterButton>For Teams and Research Groups</FooterButton>
@@ -50,21 +51,21 @@
         <FooterButton>Propose</FooterButton>
         <FooterButton>Funders and Sponsors</FooterButton>
       </div>
-      <div class="flex lg:flex-col xs:flex-wrap gap-8px ">
+      <div class="flex flex-col  gap-8px ">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">Partners</div>
         <FooterButton>Official Members</FooterButton>
         <FooterButton>Partners</FooterButton>
         <FooterButton>Organizations</FooterButton>
         <FooterButton>Sponsors</FooterButton>
       </div>
-      <div class="flex lg:flex-col xs:flex-wrap gap-8px ">
+      <div class="flex flex-col  gap-8px ">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">Funds</div>
         <FooterButton>Funding</FooterButton>
         <FooterButton>Sponsorship</FooterButton>
         <FooterButton>Donations</FooterButton>
         <FooterButton>Financial Reports</FooterButton>
       </div>
-      <div class="flex lg:flex-col xs:flex-wrap gap-8px ">
+      <div class="flex flex-col  gap-8px ">
         <div class="nuke-text-body-01 text-light-10 dark:text-light-100 px-16px">Terms</div>
         <FooterButton>Terms of Use</FooterButton>
         <FooterButton>License</FooterButton>
@@ -73,6 +74,7 @@
         <FooterButton>Cookie Preferences</FooterButton>
       </div>
     </div>
+
     <div class="nuke-text-legal-01 flex items-center justify-center text-dark-10">
       All rights reserved for the Independent Society of Knowledge
     </div>

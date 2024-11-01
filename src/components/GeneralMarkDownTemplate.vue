@@ -26,18 +26,18 @@
   -->
 <template>
   <div
-      class=" w-full h-[calc(75vh-64px)] flex flex-col  items-start  bg-cover"
+      class=" w-full h-[calc(75vh-64px)] flex flex-col  items-start  bg-cover print:h-fit  "
       :style="{
       backgroundImage: `url(${imageURL})`
     }"
   >
-    <div class="xs:mx-0 mx:px-[112px] xl:mx-[112px] xs:px-16px  py-32px md:px-[64px] md:h-full xs:h-fit xs:w-full xs:w-fit nuke-transition-productive-standard-slow-01 w-full
-      bg-black dark:bg-light-10  nuke-text-fluid-display-01 text-light-10 dark:text-dark-100 lg:max-w-[50%]
+    <div class="xs:mx-0 mx:px-[112px] xl:mx-[112px] xs:px-16px  py-32px md:px-[64px] lg:h-full md:h-fit xs:h-fit  xs:w-fit nuke-transition-productive-standard-slow-01 w-full
+      bg-black dark:bg-light-10  nuke-text-fluid-display-01 text-light-10 dark:text-dark-100 lg:max-w-[50%] print:h-fit print:w-fit print:text-black
       ">
       {{ title }}
     </div>
   </div>
-  <div v-html="renderedMarkdown" class="xs:py-32px md:px-16px h-fit lg:px-[256px] w-full dark:text-light-10 text-dark-100  flex flex-col gap-32px press" />
+  <div v-html="renderedMarkdown" class="xs:py-32px md:px-16px h-fit lg:px-[256px] w-full dark:text-light-10 text-dark-100  flex flex-col gap-32px press print:px-[112px]" />
 </template>
 <script lang="ts" setup>
 import {computed, onMounted, ref} from "vue";
@@ -51,11 +51,11 @@ const props = defineProps<{
 }>()
 
 const imageURL = computed(() => {
-  return `../../blogs/images/${props.imageName}`
+  return `../../iskportal/blogs/images/${props.imageName}`
 })
 
 const contentURL = computed(()=> {
-  return `/blogs/${props.contentName}.md`
+  return `../../iskportal/blogs/${props.contentName}.md`
 })
 const markdownContent = ref<string>('');
 const renderedMarkdown = ref<any>(''); // I assume marked returns string HTML
