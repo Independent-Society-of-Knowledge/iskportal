@@ -27,7 +27,7 @@
 
 <template>
   <div class="w-full h-fit flex flex-col dark:bg-dark-80 bg-light-10 m-0 p-0">
-    <div  id='header' class="w-full App__nav ">
+    <div  id='header' class="w-full App__nav print:hidden ">
       <Navbar/>
     </div>
     <div class="w-full h-fit flex flex-col p-0 m-0 App__main"
@@ -35,7 +35,7 @@
         <router-view/>
     </div>
 
-    <Footer class="App__footer"/>
+    <Footer class="App__footer print:hidden"/>
   </div>
 
 </template>

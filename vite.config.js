@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(), svgLoader()
   ],
-  base: 'iskportal',
+  base: '/iskportal',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

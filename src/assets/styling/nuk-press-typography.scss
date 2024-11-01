@@ -50,7 +50,7 @@
     @apply nuke-text-fluid-heading-03
   }
   p {
-    @apply nuke-text-fluid-paragraph-01
+    @apply nuke-text-fluid-paragraph-01 print:nuke-text-body-02
   }
   blockquote > p {
     @apply nuke-text-fluid-quotation-01

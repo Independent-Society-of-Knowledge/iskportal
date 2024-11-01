@@ -30,7 +30,6 @@ import HomeView from '@/pages/HomePage.vue'
 import AboutView from '@/pages/AboutUs.vue'
 import GetInvolved from '@/pages/GetInvolved.vue'
 import Contribution from '@/pages/get-involved/Contribution.vue'
-import Solutions from "@/pages/Solutions.vue";
 import Contact from "@/pages/Contact.vue";
 
 
@@ -39,7 +38,6 @@ const routes = [
     {path: '/about', component: AboutView},
     {path: '/get-involved', component: GetInvolved},
     {path: '/get-involved/contribution', component: Contribution},
-    {path: '/solutions', component: Solutions},
     {path: '/contact', component: Contact},
     {
         path: '/:pathMatch(.*)*',
