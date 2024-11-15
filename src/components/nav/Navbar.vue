@@ -90,9 +90,9 @@
 <script setup>
 
 import NavBarButton from "@/components/NavBarButton.vue";
-import SolutionsSubmenu from "@/components/nav/submenus/SolutionsSubmenu.vue";
-import GetInvolvedSubmenu from "@/components/nav/submenus/GetInvolvedSubmenu.vue";
-import SupportSubmenu from "@/components/nav/submenus/SupportSubmenu.vue";
+// import SolutionsSubmenu from "@/components/nav/submenus/SolutionsSubmenu.vue";
+// import GetInvolvedSubmenu from "@/components/nav/submenus/GetInvolvedSubmenu.vue";
+// import SupportSubmenu from "@/components/nav/submenus/SupportSubmenu.vue";
 import {ref, watch} from "vue";
 
 const selected = ref("none")
