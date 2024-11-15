@@ -54,11 +54,11 @@
           Portal
         </RouterLink>
       </div>
-      <RouterLink to="/solutions">
+      <a href="https://github.com/independent-society-of-knowledge">
         <nav-bar-button class="xs:hidden lg:flex" value="solutions" v-model="nonSubmenus">
           Solutions
         </nav-bar-button>
-      </RouterLink>
+      </a>
       <RouterLink to="/get-involved">
         <nav-bar-button class="xs:hidden lg:flex" value="get-involved" v-model="nonSubmenus">
           Get Involved
