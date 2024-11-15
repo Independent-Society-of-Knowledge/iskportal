@@ -31,6 +31,8 @@ import AboutView from '@/pages/AboutUs.vue'
 import GetInvolved from '@/pages/GetInvolved.vue'
 import Contribution from '@/pages/get-involved/Contribution.vue'
 import Contact from "@/pages/Contact.vue";
+import SupportPage from "@/pages/SupportPage.vue";
+import SolutionsPage from "@/pages/SolutionsPage.vue";
 
 
 const routes = [
@@ -39,6 +41,8 @@ const routes = [
     {path: '/get-involved', component: GetInvolved},
     {path: '/get-involved/contribution', component: Contribution},
     {path: '/contact', component: Contact},
+    {path: '/support-us', component: SupportPage},
+    {path: '/solutions', component: SolutionsPage},
     {
         path: '/:pathMatch(.*)*',
         redirect: "/",
