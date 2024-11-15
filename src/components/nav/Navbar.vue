@@ -54,15 +54,21 @@
           Portal
         </RouterLink>
       </div>
-      <nav-bar-button class="xs:hidden lg:flex" value="solutions" v-model="selected">
-        Solutions
-      </nav-bar-button>
-      <nav-bar-button class="xs:hidden lg:flex" value="get-involved" v-model="selected">
-        Get Involved
-      </nav-bar-button>
-      <nav-bar-button class="xs:hidden lg:flex" value="support" v-model="selected">
-        Support
-      </nav-bar-button>
+      <RouterLink to="/solutions">
+        <nav-bar-button class="xs:hidden lg:flex" value="solutions" v-model="selected">
+          Solutions
+        </nav-bar-button>
+      </RouterLink>
+      <RouterLink to="/get-involved">
+        <nav-bar-button class="xs:hidden lg:flex" value="get-involved" v-model="selected">
+          Get Involved
+        </nav-bar-button>
+      </RouterLink>
+      <RouterLink to="/support-us">
+        <nav-bar-button class="xs:hidden lg:flex" value="support" v-model="selected">
+          Support
+        </nav-bar-button>
+      </RouterLink>
       <RouterLink to="/about">
         <nav-bar-button class="xs:hidden lg:flex" value="about" v-model="nonSubmenus">About ISK
         </nav-bar-button>
@@ -73,12 +79,12 @@
         </nav-bar-button>
       </router-link>
     </div>
-    <div v-if="selected!== 'none'"
-         class="absolute z-50 top-64px w-full border-b-[1px] border-b-light-40 dark:border-b-dark-50 dark:bg-dark-90 bg-light-10 transition-all ">
-      <support-submenu v-if="selected === 'support'"/>
-      <get-involved-submenu v-else-if="selected === 'get-involved'"/>
-      <solutions-submenu v-else-if="selected === 'solutions'"/>
-    </div>
+<!--    <div v-if="selected!== 'none'"-->
+<!--         class="absolute z-50 top-64px w-full border-b-[1px] border-b-light-40 dark:border-b-dark-50 dark:bg-dark-90 bg-light-10 transition-all ">-->
+<!--      <support-submenu v-if="selected === 'support'"/>-->
+<!--      <get-involved-submenu v-else-if="selected === 'get-involved'"/>-->
+<!--      <solutions-submenu v-else-if="selected === 'solutions'"/>-->
+<!--    </div>-->
   </div>
 </template>
 <script setup>
