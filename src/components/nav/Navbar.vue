@@ -55,17 +55,17 @@
         </RouterLink>
       </div>
       <RouterLink to="/solutions">
-        <nav-bar-button class="xs:hidden lg:flex" value="solutions" v-model="selected">
+        <nav-bar-button class="xs:hidden lg:flex" value="solutions" v-model="nonSubmenus">
           Solutions
         </nav-bar-button>
       </RouterLink>
       <RouterLink to="/get-involved">
-        <nav-bar-button class="xs:hidden lg:flex" value="get-involved" v-model="selected">
+        <nav-bar-button class="xs:hidden lg:flex" value="get-involved" v-model="nonSubmenus">
           Get Involved
         </nav-bar-button>
       </RouterLink>
       <RouterLink to="/support-us">
-        <nav-bar-button class="xs:hidden lg:flex" value="support" v-model="selected">
+        <nav-bar-button class="xs:hidden lg:flex" value="support" v-model="nonSubmenus">
           Support
         </nav-bar-button>
       </RouterLink>
