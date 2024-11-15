@@ -26,32 +26,38 @@
   -->
 
 <template>
-  <div class="
+  <RouterLink :to="link" class="h-full w-full">
+    <div class="
   nuke-transition-productive-standard-moderate-01 backdrop-blur-[2px]
   w-full h-full group
   xs:p-16px
   xl:py-64px flex flex-col
 
   hover:backdrop-blur-[16px] hover:dark:backdrop-blur-[16px]">
-    <div class="xs:h-fit xl:h-full w-full nuke-text-heading-03" >
-      <div class="h-fit w-fit p-8px bg-dark-100 dark:bg-light-10 text-light-10 dark:text-dark-100 ">
-        {{title}}
+      <div class="xs:h-fit xl:h-full w-full nuke-text-heading-03">
+        <div class="h-fit w-fit p-8px bg-dark-100 dark:bg-light-10 text-light-10 dark:text-dark-100 ">
+          {{ title }}
+        </div>
+        <div class="text-light-10  ">
+          <slot/>
+        </div>
       </div>
-      <div class="text-light-10  "><slot/> </div>
-    </div>
 
-    <div class="w-full xs:h-[16px] xl:h-[24px] flex justify-end
+      <div class="w-full xs:h-[16px] xl:h-[24px] flex justify-end
     text-light-10 ">
-      <SvgArrowLeft height="100%"/>
-    </div>
+        <SvgArrowLeft height="100%"/>
+      </div>
 
-  </div>
+    </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
 import SvgArrowLeft from "@/assets/icons/arrow--right.svg?component"
+
 const props = defineProps<{
   title: String
+  link: string
 }>()
 </script>
 
