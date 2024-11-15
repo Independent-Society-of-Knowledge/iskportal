@@ -29,7 +29,7 @@
 <template>
   <div
       class="mx:px-[112px] md:px-[64px] py-64px xs:px-16px flex flex-col gap-[64px] bg-dark-50 dark:bg-dark-100 ">
-    <div class="flex lg:flex-row lg:gap-32px xs:gap-8px  ">
+    <div class="flex xl:flex-row lg:gap-32px xs:gap-8px xs:flex-col ">
     <div class="text-dark-60 w-fixed justify-end flex">
       <SvgISKLogo width="256px"/>
     </div>
