@@ -41,8 +41,8 @@
       </div>
     </div>
     <div class="flex flex-col w-full h-full max-w-[50%]">
-      <glass-referal title="Collaboration"/>
-      <glass-referal title="Contribution"/>
+      <glass-referal title="Collaboration" link="/get-involved/collaboration"/>
+      <glass-referal title="Contribution" link="/get-involved/contribution"/>
     </div>
   </div>
 </template>
