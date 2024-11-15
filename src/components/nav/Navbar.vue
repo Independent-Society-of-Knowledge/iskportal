@@ -29,11 +29,11 @@
 <template>
   <div>
     <div
-        class="w-full h-[64px] flex flex-row gap-0 xl:px-[112px]
+        class="w-full h-[64px] flex flex-row gap-0 xl:px-[112px] dark:bg-black bg-white
       xs:bg-none nuke-transition-productive-standard-moderate-01
       lg:border-b-light-40  lg:border-b-[1px]  lg:bg-light-10  lg:dark:border-b-dark-60  lg:dark:bg-dark-80"
     >
-      <div class="bg-dark-100 dark:bg-light-10 min-w-32px min-h-32px text-light-10 dark:text-dark-100 p-16px  ">
+      <div class="bg-dark-100 dark:bg-light-10 min-w-16px min-h-16px text-light-10 dark:text-dark-100 p-16px  ">
         <RouterLink to="/">
           <svg width="100%" height="100%" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
