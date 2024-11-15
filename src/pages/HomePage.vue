@@ -106,14 +106,14 @@
     <div class="w-full h-fit flex lg:flex-row xs:flex-col bg-cover">
       <div class="w-full">
         <div class="press-back">
-          <GlassSection title="Press">
+          <GlassSection title="Press" link="https://press.iskportal.com">
             <div class="nuke-text-fluid-paragraph-01 py-16px">
               Get to know the latest news about Independent Society of Knowledge.
             </div>
           </GlassSection>
         </div>
         <div class="collaboration-back">
-          <GlassSection title="Collaboration">
+          <GlassSection title="Collaboration" link="/get-involved/collaboration">
             <div class="nuke-text-fluid-paragraph-01 py-16px">
               Our mission extends beyond ISK, and we’re open for collaboration with teams and organizations.
             </div>
@@ -121,7 +121,7 @@
         </div>
       </div>
       <div class="w-full contribution-back">
-        <GlassSection title="Contribution">
+        <GlassSection title="Contribution" link="/get-involved/contribution">
           <div class="nuke-text-fluid-paragraph-01 py-16px">
             ISK actively searches for bright minds, to help it with the mission, in projects and more
           </div>
