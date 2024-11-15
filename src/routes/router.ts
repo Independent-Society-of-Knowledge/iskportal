@@ -33,6 +33,7 @@ import Contribution from '@/pages/get-involved/Contribution.vue'
 import Contact from "@/pages/Contact.vue";
 import SupportPage from "@/pages/SupportPage.vue";
 import SolutionsPage from "@/pages/SolutionsPage.vue";
+import Collaboration from "@/pages/get-involved/Collaboration.vue";
 
 
 const routes = [
@@ -40,6 +41,7 @@ const routes = [
     {path: '/about', component: AboutView},
     {path: '/get-involved', component: GetInvolved},
     {path: '/get-involved/contribution', component: Contribution},
+    {path: '/get-involved/collaboration', component: Collaboration},
     {path: '/contact', component: Contact},
     {path: '/support-us', component: SupportPage},
     {path: '/solutions', component: SolutionsPage},
